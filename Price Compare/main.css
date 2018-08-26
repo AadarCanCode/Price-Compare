@@ -1,0 +1,147 @@
+ @font-face { font-family: Panton; src: url('Panton-BlackCaps.otf'); } 
+ @font-face { font-family: PantonI; src: url('Panton-BlackitalicCaps.otf');}
+ @font-face { font-family: PantonL; src: url('Panton-LightCaps.otf'); } 
+ @font-face { font-family: PantonLI; src: url('Panton-LightitalicCaps.otf');}
+
+header{
+    background-color: #1c9296;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+
+img{
+    display: inline;
+    padding: 0px;
+    margin: 0;
+}
+
+.compare{
+    font-family: Panton;
+    display: inline;
+    padding: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 0;
+    color: white;
+}
+
+.grocer{
+    font-family: PantonL;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.compare1{
+    font-family: Panton;
+    display: inline-block;
+    padding: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 0;
+    margin-right: 10;
+    font-size: 20px;
+    color: #888888;
+}
+
+.grocer1{
+    font-family: PantonL;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: #888888;
+}
+    
+.ca{
+    font-family: PantonL;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    color: white;
+}
+
+body{
+    background: rgba(120, 150, 150, 0.5);
+    font-family: Source Sans Pro, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    color: #888888;
+}
+
+div{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.val{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.intro{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.search{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #888888;
+    
+}
+
+
+input{
+    font-family: PantonL;
+    display: inline-block;
+    padding: 20;
+    width: 300;
+    font-size: 15px;
+    margin: 0;
+    border: 3px solid #1c9296;
+}
+
+
+.mag{
+    margin-top: 5px;
+    display: inline-block;
+}
+
+h3{
+    text-align: left;
+    font-family: Panton;
+    color: #1c9296;
+}
+
+li{
+    padding-bottom: 20;
+    text-align: left;'
+}
+
+mark{
+    font-family: Panton;
+    font-size: 20;
+    background-color: white;
+    color: #1c9296;
+    
+}
+
+hr{
+    width: 100%;
+}

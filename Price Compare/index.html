@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" href="main.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<script src="main.js"></script>
+<meta charset="utf-8">
+    <title>Price Compare</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+    <header><h1 class="grocer"><img src="21981615_1487491804668927_1789113954_o.png" width=50 style="vertical-align:middle">Price</h1><h1 class="compare">Compare</h1><h1 class="ca">.ca</h1></header>
+            </div>
+    
+        <div class="intro">
+        <p><mark>Welcome to PriceCompare.ca!</mark> <br>
+            
+            Ever feel like looking through every flyer to find the cheapest price a large hastle and ending up with a mess of papers? PriceCompare allows you to search for any item you desire and will give you a list of multiple sellers and their prices allowing you to get the best deals around. Get ready to say goodbye to flyers! </p>
+        </div>
+        <div class="search">
+        <h1 class=grocer1><img src="hi.png" width=35 class="mag" style="vertical-align:middle">ENTER YOUR</h1> <h1 class="compare1">ITEM</h1>
+        <input type="text" placeholder="I'm looking for..." id="search-box" />
+            <hr>
+        <h3>Results...</h3>
+        <div id="val">
+        </div>
+        </div>
+    
+    </body>
+
+    
+    <script>
+    $('#search-box').keydown(function (event){
+        var keypressed = event.keyCode || event.which;
+        if(keypressed == 13){
+            var query = "http://localhost:3000/api/?name=" + $(this).val();
+            $.getJSON( query, function( data ) {
+            var items = [];
+            $.each( data, function( key, val ) {
+        if(val.price != undefined){
+            items.push( "<li id=" + key + "'>" + "$" + val.price + " " + val.name + " " + val.sitedetails[0].url+ " " + "</li>" ); }
+            });
+            
+            $('#val').empty();
+                
+            
+                
+            
+                
+ 
+            $( "<ul/>", {
+            "class": "my-new-list",
+            html: items.join( "" )
+            }).appendTo( "#val" );
+});
+        }
+    })
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+</html>
